@@ -8,7 +8,7 @@ let cleanTheRoomPromise = new Promise(function(resolve, reject) {
 	perform some task here, like cleaning the room
 	then after room cleaned, update roomCleaned
 	*/
-	let roomCleaned = false;
+	let roomCleaned = true;
 	if(roomCleaned)
 		resolve("Room Cleaned!");
 	else
