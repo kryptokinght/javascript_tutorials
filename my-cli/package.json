@@ -1,0 +1,19 @@
+{
+  "name": "my-cli",
+  "version": "1.0.0",
+  "description": "A tutorial CLI tool",
+  "main": "cli.js",
+  "preferGlobal": true,
+  "bin": {
+    "mycli": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^6.0.0"
+  }
+}
