@@ -4,7 +4,7 @@ There are 4 ways you can create objects in JavaScript:
 2.Using Constructors
 3.prototypes
 4.
-*/
+*/ 
 (function() {
 
 //**************1. Creating objects in javaScript using factory function***************

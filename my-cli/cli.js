@@ -9,7 +9,7 @@ const { prompt } = require('inquirer');
 //prompt questions for fullName
 const Nameq = [
 	{
-		type: "input",
+		type: "input", 
 		name: "firstName",
 		message: "Your first Name:"
 	},

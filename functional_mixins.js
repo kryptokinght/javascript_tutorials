@@ -6,15 +6,16 @@ You can add features to that object like you add ingredients to an icecream.
 Javascript supports dynamic object extension, you can extend an object by dynamically
 adding features to it.
 
-A factory function is a function which is not a class or constructor but returns an 
+A factory function is a function which is not a class or constructor but returns an
 object without the new keyword.
-*/ 
+*/
 /*
 WHAT I'LL DO HERE:
-I am going to create a number of objects which will act as ingredients that 
+I am going to create a number of objects which will act as ingredients that
 will serve flavours/features to another object also called composite object
 */
-(function() {
+(function() { //IIFE
+
 	function display(icecream) {
 		console.log(`
 			Contents of an icecream:
@@ -23,7 +24,7 @@ will serve flavours/features to another object also called composite object
 			hasVanilla: ${icecream.hasVanilla()}
 		`);
 	}
-
+	//some random flavour objects
 	const chocolate = {
 		hasChocolate: () => true
 	};
@@ -36,7 +37,7 @@ will serve flavours/features to another object also called composite object
 
 	const icecream = Object.assign({}, chocolate, strawberry, vanilla); //composite object
 	//special way of outputting foramtted strings(LEARN IT)
-	//console.log(` Print30: ${ 20+10 }`); OUTPUT: Print30: 30 
+	//console.log(` Print30: ${ 20+10 }`); OUTPUT: Print30: 30
 	display(icecream);
 
 	//**********Same icecream object using functional inheritance********
