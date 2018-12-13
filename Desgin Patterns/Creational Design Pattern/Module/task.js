@@ -8,6 +8,7 @@ function Task(data) {
 Task.prototype.save = function() {
     console.log(`Saving task ${this.name}`);
     db.save(this);
+    
 }
 
 Task.prototype.complete = function() {

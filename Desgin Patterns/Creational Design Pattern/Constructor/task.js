@@ -1,6 +1,6 @@
 function Task(name) {
-    this.name = name;
-    this.completed = false;
+    this.name = name; //public
+    this.completed = false; //public
 }
 
 Task.prototype.save = function() {
@@ -8,7 +8,7 @@ Task.prototype.save = function() {
 }
 
 Task.prototype.complete = function() {
-    console.log("Completing task " + this.name);
+    console.log("Completing task " + this.completed);
     this.completed = true;
 }
 

@@ -1,4 +1,4 @@
-## Object Oriented approach in Javascript
+ ## Object Oriented approach in Javascript
 "Each pattern represents our current best guess to what arrangement of the enironment will work to solve the problem presented" - Christopher ALexander
 
 - **Designing service layer** - Separates the data manipulation code from the controller. MODULE PATTERN. We create a little package called module which deals with manipulating the data, while the controller can utilize this module to do some task.
@@ -36,5 +36,6 @@ Pattern of the course:
 
 #### Patterns
 1. Constructor Pattern - 
+2. Singleton Pattern
 
 
