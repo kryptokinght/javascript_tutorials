@@ -18,7 +18,13 @@
   "homepage": "https://github.com/kryptokinght/javascript_tutorials#readme",
   "dependencies": {
     "image-downloader": "^3.3.0",
-    "rxjs": "^6.3.3"
+    "rxjs": "^5.0.0",
+    "typescript": "^3.2.2"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "ts-loader": "^5.3.1",
+    "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10"
+  }
 }
