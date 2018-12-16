@@ -14,7 +14,7 @@ WHAT I'LL DO HERE:
 I am going to create a number of objects which will act as ingredients that
 will serve flavours/features to another object also called composite object
 */
-(function() { //IIFE
+(function () { //IIFE
 
 	function display(icecream) {
 		console.log(`

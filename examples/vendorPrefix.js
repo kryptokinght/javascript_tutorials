@@ -6,11 +6,17 @@
 */
 
 function getPrefix(prop, context) {
-    var vendorPrefixes = ['moz', 'webkit', 'khtml', 'o', 'ms'],
-        upper = prop.charAt(0).toUpperCase() + prop.slice(1),
-        pref, len = vendorPrefixes.length,
-        q = null;
-    //***what does this loop do****
+    const vendorPrefixes = ['moz', 'webkit', 'khtml', 'o', 'ms'];
+
+
+    const upper = prop.charAt(0).toUpperCase() + prop.slice(1);
+
+
+    let pref; let len = vendorPrefixes.length;
+
+
+    let q = null;
+    //* **what does this loop do****
     while (len--) {
         q = vendorPrefixes[len];
         if (context.toString().indexOf('style')) {
@@ -20,24 +26,24 @@ function getPrefix(prop, context) {
             pref = (q);
         }
     }
-    //***looks for the property in the context****
+    //* **looks for the property in the context****
     if (prop in context) {
         pref = prop;
     }
 
     if (pref) {
-        return '-' + pref.toLowerCase() + '-';
+        return `-${pref.toLowerCase()}-`;
     }
     return '';
 }
 
-//LocalStorage test
+// LocalStorage test
 console.log(getPrefix('localStorage', window));
-//Page Visibility API
+// Page Visibility API
 console.log(getPrefix('hidden', document));
-//CSS3 transforms
+// CSS3 transforms
 console.log(getPrefix('transform', document.createElement('div').style));
-//CSS3 transitions
+// CSS3 transitions
 console.log(getPrefix('transition', document.createElement('div').style));
-//File API test (very basic test, ideally check against 'File' too)
+// File API test (very basic test, ideally check against 'File' too)
 console.log(getPrefix('FileReader', window));

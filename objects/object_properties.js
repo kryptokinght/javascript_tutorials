@@ -3,25 +3,23 @@ A small program to print an object's own properties, not its prototype propertie
 */
 
 function RandomObjectType(sex, age) {
-	this.sex = sex;
-	this.age = age;
-	this.getAge = () => age;
-	this.getSex = () => sex;
+  this.sex = sex;
+  this.age = age;
+  this.getAge = () => age;
+  this.getSex = () => sex;
 }
 
-//protoype property for RandomObjectType
-RandomObjectType.prototype.display = function() {
-	console.log("Age: " + this.age);
-	console.log("Sex: " + this.sex);
-}
+// protoype property for RandomObjectType
+RandomObjectType.prototype.display = function () {
+  console.log(`Age: ${  this.age}`);
+  console.log(`Sex: ${  this.sex}`);
+};
 
-//creating an object
-var m1 = new RandomObjectType('m', 23);
-//looping through the object properties and printing it
-for(var prop in m1) {
-	if(m1.hasOwnProperty(prop))
-		console.log(prop);
-}
+// creating an object
+const m1 = new RandomObjectType("m", 23);
+// looping through the object properties and printing it
+Object.keys(m1).forEach(key => console.log(m1[key]));
+
 /*
 As we see it does not logs the 'display property'
 */

@@ -71,8 +71,8 @@ let ops = {
   url: "https://scontent.fbom4-2.fna.fbcdn.net/v/t1.0-0/p417x417/18301288_1346565462091863_6532501301566105197_n.jpg?oh=9fcd6974845ccb1734f93f16db68cdd1&oe=5B466C12",
   dest: "images/test.jpg"
 }
-downloader.image({}).then(({filename, image}) => {
-  console.log("Image saved to: ",filename)
+downloader.image({}).then(({ filename, image }) => {
+  console.log("Image saved to: ", filename)
 }).catch((err) => {
   throw err
 })
