@@ -4,7 +4,8 @@
   "description": "A collection of different concepts of Javascript programming",
   "main": "create_objects.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,9 @@
   },
   "keywords": [],
   "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
     "ts-loader": "^5.3.1",
     "webpack": "^4.27.1",
     "webpack-dev-server": "^3.1.10"
