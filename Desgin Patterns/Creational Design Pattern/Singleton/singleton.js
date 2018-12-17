@@ -1,18 +1,19 @@
+/* eslint-disable no-alert */
 /*
 Ensure there is only one instance of that class for example an object that 
 manages databse management pool.
 */
 
-var Singleton = (function () {
-    var instance;
- 
+const Singleton = (function () {
+    let instance;
+
     function createInstance() {
-        var object = new Object("I am the instance");
+        const object = { "name": "Minanshu" };
         return object;
     }
- 
+
     return {
-        getInstance: function () {
+        getInstance() {
             if (!instance) {
                 instance = createInstance();
             }
@@ -20,11 +21,13 @@ var Singleton = (function () {
         }
     };
 })();
- 
+
 function run() {
- 
-    var instance1 = Singleton.getInstance();
-    var instance2 = Singleton.getInstance();
- 
-    alert("Same instance? " + (instance1 === instance2));  
+
+    const instance1 = Singleton.getInstance();
+    const instance2 = Singleton.getInstance();
+
+    alert(`Same instance? ${instance1 === instance2}`);
 }
+
+run();

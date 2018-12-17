@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable array-callback-return */
 /* This program doesn't work */
 function checkDim(array) {
   for (let i = 0; i < array.length; i += 1)

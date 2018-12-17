@@ -4,11 +4,24 @@
     "prettier"
   ],
   "env": {
-    "browser": false,
+    "browser": true,
     "node": true
   },
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-plusplus": "off",
+    "func-names": [
+      "error",
+      "never"
+    ],
+    "prefer-destructuring": [
+      "error",
+      {
+        "object": false,
+        "array": false
+      }
+    ]
   },
   "plugins": [
     "prettier"

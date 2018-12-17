@@ -1,21 +1,21 @@
-//Revealing module concept used
+// Revealing module concept used
 
 function database() {
 
-    //var db = {}; //random database connection
-    const get = function(id) {
+    // var db = {}; //random database connection
+    const get = (id) => {
         console.log("Getting task from db", id);
         return {
             name: "new task from db"
         };
     }
-    const save = function(task) {
+    const save = (task) => {
         console.log(`Saving task into db: ${task.name}`);
-    } 
+    }
 
     return {
-        get: get,
-        save: save
+        get,
+        save
     };
 }
 

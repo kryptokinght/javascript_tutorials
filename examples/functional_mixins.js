@@ -1,4 +1,5 @@
-//prefer object composition over class inheritance.
+/* eslint-disable no-shadow */
+// prefer object composition over class inheritance.
 /*
 Functional mixins are a form of object composition.
 You can create object without classes in JavaScript. So after creating an object
@@ -14,7 +15,7 @@ WHAT I'LL DO HERE:
 I am going to create a number of objects which will act as ingredients that
 will serve flavours/features to another object also called composite object
 */
-(function () { //IIFE
+(function () { // IIFE
 
 	function display(icecream) {
 		console.log(`
@@ -24,7 +25,7 @@ will serve flavours/features to another object also called composite object
 			hasVanilla: ${icecream.hasVanilla()}
 		`);
 	}
-	//some random flavour objects
+	// some random flavour objects
 	const chocolate = {
 		hasChocolate: () => true
 	};
@@ -35,21 +36,21 @@ will serve flavours/features to another object also called composite object
 		hasVanilla: () => true
 	};
 
-	const icecream = Object.assign({}, chocolate, strawberry, vanilla); //composite object
-	//special way of outputting foramtted strings(LEARN IT)
-	//console.log(` Print30: ${ 20+10 }`); OUTPUT: Print30: 30
+	const icecream = Object.assign({}, chocolate, strawberry, vanilla); // composite object
+	// special way of outputting foramtted strings(LEARN IT)
+	// console.log(` Print30: ${ 20+10 }`); OUTPUT: Print30: 30
 	display(icecream);
 
-	//**********Same icecream object using functional inheritance********
+	//* *********Same icecream object using functional inheritance********
 
-	//base object factory
+	// base object factory
 	function base(chocolate, strawberry, vanilla) {
-		var that = {};
+		const that = {};
 		that.hasChocolate = chocolate.hasChocolate;
 		that.hasVanilla = vanilla.hasVanilla;
 		that.hasStrawberry = strawberry.hasStrawberry;
 		return that;
 	}
-	var icecream2 = base(chocolate, strawberry, vanilla);
+	const icecream2 = base(chocolate, strawberry, vanilla);
 	display(icecream2);
 }());

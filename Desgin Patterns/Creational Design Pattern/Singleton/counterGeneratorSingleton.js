@@ -1,4 +1,4 @@
-let CounterGenerator = (function() {
+const CounterGenerator = (function () {
     let instance = null;
 
     function init() {
@@ -11,18 +11,18 @@ let CounterGenerator = (function() {
             _log();
         }
         function decrement() {
-            _counter--;
+            _counter -= 1;
             _log();
         }
         return {
-            increment: increment,
-            decrement: decrement
+            increment,
+            decrement
         };
     }
 
     return {
         getInstance: () => {
-            if(!instance) {
+            if (!instance) {
                 instance = init();
             }
             return instance;
