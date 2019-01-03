@@ -23,6 +23,9 @@ Single threaded frameworks like Node uses event loop and callbaacks to perform s
 * [Furthur Adventures of the Event Loop - Erin Zimmer - JSConf EU 2018][9] : Explains the event loop in case of **browsers**, **node** and **webworkers**.
 * [Jake Archibald - In the loop][10] : A more example oriented way of explaning event loop. 
 
+## 'use strict';
+
+
 
 ## Linting
 Different kind of **Linters** in the order of *how configurable* they are: **JSLint, JSHint, ESLint**. 
