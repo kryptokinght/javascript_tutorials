@@ -78,3 +78,7 @@ Different kind of **Linters** in the order of *how configurable* they are: **JSL
 ## RXjs
 **ReactiveX** is an API for asynchronous programming with observable streams.
 
+[8]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
+[9]: https://www.youtube.com/watch?v=u1kqx6AenYw
+[10]: https://www.youtube.com/watch?v=cCOL7MC4Pl0
+
