@@ -31,7 +31,7 @@ Before the advent of the `let` keyword, JS did not have block level scopes. That
 
 **Variable hoisting** - Only variable declarations are hoisted to the top not variable initializations or assignments.
 
-What better than a Javascript sexy [article](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/) on **Variable scope**.
+What better than a [Javascript sexy article](http://javascriptissexy.com/javascript-variable-scope-and-hoisting-explained/) on **Variable scope**.
 
 
 
