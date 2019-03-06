@@ -42,7 +42,7 @@ Every function in JS has a **reference to outer environment**.  <br/>
 
 ### Concurrency model and Event loop
 Single threaded frameworks like Node uses event loop and callbaacks to perform slow I/O operations.
-* [This video][8] here explains perfectly *Concurrency model and Event Loop* in JS running on **Browsers**.
+* [Philip Roberts - What the heck is the event loop anyway][8] - explains perfectly *Concurrency model and Event Loop* in JS running on **Browsers**.
 * [Furthur Adventures of the Event Loop - Erin Zimmer - JSConf EU 2018][9] : Explains the event loop in case of **browsers**, **node** and **webworkers**.
 * [Jake Archibald - In the loop][10] : A more example oriented way of explaning event loop. 
 
@@ -73,7 +73,7 @@ IIFEs along with the power of Closures forms the amazing **module pattern**.
 * Module pattern
 
 ### IIFE
-[Great article to understand IIFE](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6)
+[Essential JS mastering IIFE](https://medium.com/@vvkchandra/essential-javascript-mastering-immediately-invoked-function-expressions-67791338ddc6) - Great article to understand IIFE
 * Function expressions vs Function Definitions
 * IIFEs are immediately invoked function expression
 * Different ways to denote function expression
