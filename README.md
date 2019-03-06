@@ -1,7 +1,8 @@
 # Javascript
 
-Foundation Principles of OOP design:
-1. Program to an interface, not implementation
+JS is a scripting language which was mostly used to right scripts that are embedded into web applications along with the HTML and CSS. It help makes the website interactive and dynamic allowing the creator to add event handlers for buttons, performing animations, sending AJAX requests and much more.
+
+But now-a-days JS is basically used in every other facet of programming use-case - be it creating desktop applications(Electron) or writing server side code(NodeJS). It is even used in ML, thanks to the various open source libraries. 
 
 ***Javscript Runtime*** is single threaded, **not Javascript**. Javascript Runtime refers to the context in which Js is being run. If the Javascript is run inside a browser its runtime environment is the ***browser***, and if it runs in a server or anywhere else, its runtime environment is provided by ***NodeJs***. The *Chrome browser* and *NodeJS* both uses the same JS engine(V8) to parse the code.
 
