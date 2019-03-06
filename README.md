@@ -3,6 +3,29 @@
 Foundation Principles of OOP design:
 1. Program to an interface, not implementation
 
+***Javscript Runtime*** is single threaded, **not Javascript**. Javascript Runtime refers to the context in which Js is being run. If the Javascript is run inside a browser its runtime environment is the ***browser***, and if it runs in a server or anywhere else, its runtime environment is provided by ***NodeJs***. The *Chrome browser* and *NodeJS* both uses the same JS engine(V8) to parse the code.
+
+To understand the execution model of ***Javascript*** follow the links sequentially:
+
+1. *Event Loop and JS execution model* - https://youtu.be/8aGhZQkoFbQ
+2. *How asynchrnous operations in JS takes place(XHR requests, setTimeout)* - https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean
+3. *Concurrency model and Event Loop* - https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+
+*All the above resources will give you a theoretical knowledge of how the execution model of most browsers looks like. But the implementation totally depends on the browser vendors.*
+
+The **job of an *event loop*** is to check the call stack and the task queue,  and if the call stack is empty take the first task from the task queue and push it to the call stack.
+
+Whenever the ***JS engine encounters any asynchrnous activites*** in the execution of the code like **setTimeout** or **XHRrequests**, it sends them to be executed in a different thread which are managed by the browser. For example, the *setTimeout* is handled by creating a *Timer object* that runs in a different thread. The timer goes on for the given period of time, and once it completes the callback function associated with the *setTimeout(time, callback)* is pushed into the **event loop** where it waits to be pushed into the **call stack** to get executed. 
+
+If JS is executed inside Chrome browser, then the engine used is ***Chrome V8 engine***, if its firefox then its ***Spidermonkey***, ***Chakra*** in case of Edge. 
+
+The difference between **Engine and Runtime** is that Engine parses the code and performs JIT compilation, while Runtime provides some objects(built-in libraries) so that it can interact with the outside world. 
+
+
+Asynchrnonous nature of Javascript basically means attaching an event handler for an event that is supposed to happen some time in the future. SO whenever the event happens, the related event handler is executed. Examples of such events are:
+* `setTimeout(eventHandler 3000)`
+* *AJAX request*
+* *attaching event handlers to DOM objects like buttons*
 
 Javascript execution takes place in 2 phases:
 
@@ -77,6 +100,21 @@ Different kind of **Linters** in the order of *how configurable* they are: **JSL
 
 ## RXjs
 **ReactiveX** is an API for asynchronous programming with observable streams.
+
+## AJAX
+
+*(Asynchronous Javascript and XML)* 
+https://medium.com/front-end-weekly/ajax-async-callback-promise-e98f8074ebd7
+  * It is an implementation of JS.
+  * With the help of AJAX, an application can be send or receive data asynchrnously without interfering with the display and behaviour of the page.
+  * It helps in separating data interchange layer and data presentation layer. 
+  * AJAX is not a single technology.
+  * 
+  * Mostly used in SPA  
+  
+
+
+## Javascript concepts
 
 [8]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
 [9]: https://www.youtube.com/watch?v=u1kqx6AenYw
